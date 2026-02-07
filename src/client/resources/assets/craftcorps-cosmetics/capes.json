@@ -1,0 +1,33 @@
+{
+    "schemaVersion": 1,
+    "capes": [
+        {
+            "id": "default",
+            "name": "Default Cape",
+            "description": "The classic CraftCorps cape",
+            "texture": "default.png",
+            "rarity": "common"
+        },
+        {
+            "id": "vip",
+            "name": "VIP Cape",
+            "description": "Exclusive VIP member cape",
+            "texture": "vip.png",
+            "rarity": "rare"
+        },
+        {
+            "id": "staff",
+            "name": "Staff Cape",
+            "description": "CraftCorps staff member cape",
+            "texture": "staff.png",
+            "rarity": "epic"
+        },
+        {
+            "id": "developer",
+            "name": "Developer Cape",
+            "description": "CraftCorps developer cape",
+            "texture": "developer.png",
+            "rarity": "legendary"
+        }
+    ]
+}

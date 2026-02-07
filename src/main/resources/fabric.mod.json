@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "craftcorps-cosmetics",
+  "version": "${version}",
+  "name": "CraftCorps-Cosmetics",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/craftcorps-cosmetics/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.orbitium.craftcorpsCosmetics.client.CraftcorpsCosmeticsDataGenerator"
+    ],
+    "client": [
+      "me.orbitium.craftcorpsCosmetics.client.CraftcorpsCosmeticsClient"
+    ],
+    "main": [
+      "me.orbitium.craftcorpsCosmetics.CraftcorpsCosmetics"
+    ]
+  },
+  "mixins": [
+    "craftcorps-cosmetics.mixins.json",
+    {
+      "config": "craftcorps-cosmetics.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

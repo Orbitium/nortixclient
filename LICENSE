@@ -1,0 +1,23 @@
+PROPRIETARY LICENSE
+
+Copyright (c) 2026 NortixClient
+
+1. PERMISSIONS
+You are granted a limited, non-exclusive, revocable license to:
+- Compile the source code of this software for personal testing and verification purposes.
+- Run the compiled binary of this software on your local machine for personal use.
+
+2. RESTRICTIONS
+Except as expressly granted above, no other rights are granted. You are strictly prohibited from:
+- Modifying, altering, patching, or creating derivative works of the software.
+- Redistributing, publishing, or sharing the source code or compiled binaries in any form.
+- Copying, cloning, or mirroring the repository or any part of its contents.
+- Merging this software into other repositories or projects.
+- Sublicensing, selling, renting, leasing, or commercially exploiting the software.
+- Reverse engineering, decompiling, or disassembling the software.
+
+3. OWNERSHIP
+All title, ownership rights, and intellectual property rights in and to the software remain with the copyright holders.
+
+4. DISCLAIMER
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
