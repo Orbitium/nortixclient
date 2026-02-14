@@ -94,6 +94,9 @@ You are **NOT** permitted to:
 ### Revocation
 The copyright holders reserve the right to revoke this license at any time without prior notice or warning.
 
+### Feedback & Contributions
+By submitting feedback, bug reports, or code snippets, you grant Nortix Labs a perpetual, royalty-free license to use your submissions. In return, contributors may receive public recognition and in-platform rewards (Shards/Cosmetics) at the discretion of Nortix Labs.
+
 For the complete license terms, see the [LICENSE](LICENSE) file.
 
 ## ⚠️ Disclaimer
