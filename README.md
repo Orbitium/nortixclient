@@ -91,6 +91,9 @@ You are **NOT** permitted to:
 - Use the software for commercial purposes
 - Reverse engineer or decompile the software
 
+### Revocation
+The copyright holders reserve the right to revoke this license at any time without prior notice or warning.
+
 For the complete license terms, see the [LICENSE](LICENSE) file.
 
 ## ⚠️ Disclaimer
