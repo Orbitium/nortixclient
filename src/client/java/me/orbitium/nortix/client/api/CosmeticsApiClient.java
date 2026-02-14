@@ -19,7 +19,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class CosmeticsApiClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(CosmeticsApiClient.class);
-    private static final String API_BASE_URL = "https://api.craftcorps.net/cosmetics";
+    private static final String API_BASE_URL = "https://api.nortixlabs.com/cosmetics";
     private static final Gson GSON = new Gson();
 
     private final HttpClient httpClient;

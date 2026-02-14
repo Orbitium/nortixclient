@@ -14,7 +14,7 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        "craftcorps-cosmetics" {
+        "nortix-cosmetics" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
@@ -54,7 +54,7 @@ dependencies {
 
 loom {
     mixin {
-        defaultRefmapName = "craftcorps-cosmetics.refmap.json"
+        defaultRefmapName = "nortix-cosmetics.refmap.json"
     }
 }
 

@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "craftcorps-cosmetics",
+  "id": "nortix-cosmetics",
   "version": "${version}",
   "name": "Nortix Client",
   "description": "",
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/craftcorps-cosmetics/icon.png",
+  "icon": "assets/nortix-cosmetics/icon.png",
   "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
-      "me.orbitium.nortix.client.CraftcorpsCosmeticsDataGenerator"
+      "me.orbitium.nortix.client.NortixCosmeticsDataGenerator"
     ],
     "client": [
-      "me.orbitium.nortix.client.CraftcorpsCosmeticsClient"
+      "me.orbitium.nortix.client.NortixCosmeticsClient"
     ],
     "main": [
-      "me.orbitium.nortix.CraftcorpsCosmetics"
+      "me.orbitium.nortix.NortixCosmetics"
     ]
   },
   "mixins": [
-    "craftcorps-cosmetics.mixins.json",
     {
-      "config": "craftcorps-cosmetics.client.mixins.json",
+      "config": "nortix-cosmetics.client.mixins.json",
       "environment": "client"
     }
   ],

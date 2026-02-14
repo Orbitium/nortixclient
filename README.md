@@ -112,7 +112,7 @@ The project uses the base package `me.orbitium.nortix` with the following organi
 
 ### Configuration Files
 - `fabric.mod.json`: Mod metadata and entrypoints
-- `craftcorps-cosmetics.mixins.json`: Mixin configurations
+- `nortix-cosmetics.mixins.json`: Mixin configurations
 - `gradle.properties`: Build properties and versions
 
 ## 📞 Contact

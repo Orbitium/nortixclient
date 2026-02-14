@@ -325,7 +325,7 @@ public class AccountOverlay {
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setConnectTimeout(5000);
                 connection.setReadTimeout(5000);
-                connection.setRequestProperty("User-Agent", "Mozilla/5.0 (CraftCorps Cosmetics Mod)");
+                connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Nortix Mod)");
                 connection.connect();
 
                 int code = connection.getResponseCode();
@@ -334,8 +334,8 @@ public class AccountOverlay {
                         NativeImage image = NativeImage.read(is);
                         MinecraftClient.getInstance().execute(() -> {
                             try {
-                                String textureId = "craftcorps_head_" + uuid.toString();
-                                Identifier id = Identifier.of("craftcorps-cosmetics", textureId);
+                                String textureId = "nortix_head_" + uuid.toString();
+                                Identifier id = Identifier.of("nortix-cosmetics", textureId);
 
                                 NativeImageBackedTexture texture = new NativeImageBackedTexture(() -> textureId, image);
                                 MinecraftClient.getInstance().getTextureManager().registerTexture(id, texture);

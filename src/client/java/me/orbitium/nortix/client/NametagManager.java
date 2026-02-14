@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class NametagManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(NametagManager.class);
-    private static final String COSMETICS_BASE_URL = "https://api.craftcorps.net/cosmetics/";
+    private static final String COSMETICS_BASE_URL = "https://api.nortixlabs.com/cosmetics/";
 
     // Maps nametag ID -> Resource Identifier (texture path)
     private static final Map<String, Identifier> nametagTextures = new ConcurrentHashMap<>();
@@ -37,7 +37,7 @@ public class NametagManager {
     private static long cacheTtlMs = 5 * 60 * 1000; // 5 minutes default
 
     // Debug mode
-    private static final boolean DEBUG_MODE = Boolean.getBoolean("craftcorps.cosmetics.debug");
+    private static final boolean DEBUG_MODE = Boolean.getBoolean("nortix.cosmetics.debug");
 
     private static CosmeticsApiClient apiClient;
 
@@ -74,7 +74,7 @@ public class NametagManager {
         }
 
         // Fallback to test icon
-        return Identifier.of("craftcorps-cosmetics", "textures/icons/Add.png");
+        return Identifier.of("nortix-cosmetics", "textures/icons/Add.png");
     }
 
     public static void ensureNametag(UUID uuid) {
@@ -124,7 +124,7 @@ public class NametagManager {
                             try {
                                 NativeImageBackedTexture texture = new NativeImageBackedTexture(
                                         () -> "downloaded_nametag_" + nametagId, image);
-                                Identifier identifier = Identifier.of("craftcorps-cosmetics",
+                                Identifier identifier = Identifier.of("nortix-cosmetics",
                                         "downloaded_nametag_" + nametagId);
                                 MinecraftClient.getInstance().getTextureManager().registerTexture(identifier, texture);
                                 nametagTextures.put(nametagId, identifier);

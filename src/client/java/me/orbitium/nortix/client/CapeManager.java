@@ -18,7 +18,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class CapeManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(CapeManager.class);
-    private static final String COSMETICS_BASE_URL = "https://api.craftcorps.net/cosmetics/";
+    private static final String COSMETICS_BASE_URL = "https://api.nortixlabs.com/cosmetics/";
 
     // Maps cape ID -> Resource Identifier (texture path)
     private static final Map<String, Identifier> capeTextures = new ConcurrentHashMap<>();
@@ -37,8 +37,8 @@ public class CapeManager {
 
     private static long cacheTtlMs = 5 * 60 * 1000; // 5 minutes default
 
-    // Debug mode: Set -Dcraftcorps.cosmetics.debug=true to enable
-    private static final boolean DEBUG_MODE = Boolean.getBoolean("craftcorps.cosmetics.debug");
+    // Debug mode: Set -Dnortix.cosmetics.debug=true to enable
+    private static final boolean DEBUG_MODE = Boolean.getBoolean("nortix.cosmetics.debug");
 
     private static CosmeticsApiClient apiClient;
 
@@ -186,7 +186,7 @@ public class CapeManager {
      * Helper to create a local identifier (used for known/debug capes)
      */
     private static Identifier createCapeIdentifier(String capeId) {
-        return Identifier.of("craftcorps-cosmetics", "textures/capes/" + capeId + ".png");
+        return Identifier.of("nortix-cosmetics", "textures/capes/" + capeId + ".png");
     }
 
     /**
@@ -217,7 +217,7 @@ public class CapeManager {
                             try {
                                 NativeImageBackedTexture texture = new NativeImageBackedTexture(
                                         () -> "downloaded_cape_" + capeId, image);
-                                Identifier identifier = Identifier.of("craftcorps-cosmetics",
+                                Identifier identifier = Identifier.of("nortix-cosmetics",
                                         "downloaded_cape_" + capeId);
                                 MinecraftClient.getInstance().getTextureManager().registerTexture(identifier, texture);
                                 capeTextures.put(capeId, identifier);

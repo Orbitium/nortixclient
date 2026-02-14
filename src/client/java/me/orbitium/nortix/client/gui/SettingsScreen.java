@@ -9,7 +9,7 @@ public class SettingsScreen extends Screen {
     private final Screen parent;
 
     public SettingsScreen(Screen parent) {
-        super(Text.translatable("menu.craftcorps.settings"));
+        super(Text.translatable("menu.nortix.settings"));
         this.parent = parent;
     }
 
@@ -25,7 +25,7 @@ public class SettingsScreen extends Screen {
         // Singleplayer Toggle
         this.addDrawableChild(
                 net.minecraft.client.gui.widget.CyclingButtonWidget.onOffBuilder(config.showSingleplayerRPC)
-                        .build(x, y, 200, 20, Text.translatable("menu.craftcorps.settings.show_singleplayer"),
+                        .build(x, y, 200, 20, Text.translatable("menu.nortix.settings.show_singleplayer"),
                                 (button, value) -> {
                                     config.showSingleplayerRPC = value;
                                     me.orbitium.nortix.client.util.ConfigManager.save();
@@ -36,7 +36,7 @@ public class SettingsScreen extends Screen {
         // Multiplayer Toggle
         this.addDrawableChild(
                 net.minecraft.client.gui.widget.CyclingButtonWidget.onOffBuilder(config.showMultiplayerRPC)
-                        .build(x, y, 200, 20, Text.translatable("menu.craftcorps.settings.show_multiplayer"),
+                        .build(x, y, 200, 20, Text.translatable("menu.nortix.settings.show_multiplayer"),
                                 (button, value) -> {
                                     config.showMultiplayerRPC = value;
                                     me.orbitium.nortix.client.util.ConfigManager.save();
@@ -51,7 +51,7 @@ public class SettingsScreen extends Screen {
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         super.render(context, mouseX, mouseY, delta);
         context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 15, 0xFFFFFFFF);
-        context.drawCenteredTextWithShadow(this.textRenderer, Text.translatable("menu.craftcorps.settings.discord_rpc"),
+        context.drawCenteredTextWithShadow(this.textRenderer, Text.translatable("menu.nortix.settings.discord_rpc"),
                 this.width / 2, 38,
                 0xFFAAAAAA);
     }

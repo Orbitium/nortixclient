@@ -1,0 +1,16 @@
+{
+    "menu.nortix.discovery": "Discovery",
+    "menu.nortix.settings": "Nortix Settings",
+    "menu.nortix.settings.discord_rpc": "Discord RPC Settings",
+    "menu.nortix.settings.show_singleplayer": "Show Singleplayer Status",
+    "menu.nortix.settings.show_multiplayer": "Show Multiplayer Status",
+    "rpc.nortix.main_menu": "Main Menu",
+    "rpc.nortix.exploring": "Exploring",
+    "rpc.nortix.realms": "Minecraft Realms",
+    "rpc.nortix.singleplayer": "Singleplayer World",
+    "rpc.nortix.state.playing": "Playing",
+    "rpc.nortix.state.idle": "Idle",
+    "rpc.nortix.state.menu": "In Menu",
+    "menu.nortix.title": "Nortix",
+    "menu.nortix.suffix": "Client"
+}

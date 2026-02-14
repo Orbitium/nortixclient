@@ -52,13 +52,13 @@ public abstract class MixinAbstractClientPlayerEntity {
                 } catch (Exception e) {
                     // If there's any error creating the custom cape texture, just use the original
                     // This prevents crashes from missing textures or other rendering issues
-                    System.err.println("[CraftCorps-Cosmetics] Failed to apply custom cape: " + e.getMessage());
+                    System.err.println("[Nortix-Cosmetics] Failed to apply custom cape: " + e.getMessage());
                     e.printStackTrace();
                 }
             }
         } catch (Throwable t) {
             // Catch absolutely everything to prevent crashes
-            System.err.println("[CraftCorps-Cosmetics] Critical error in cape rendering: " + t.getMessage());
+            System.err.println("[Nortix-Cosmetics] Critical error in cape rendering: " + t.getMessage());
             t.printStackTrace();
         }
     }

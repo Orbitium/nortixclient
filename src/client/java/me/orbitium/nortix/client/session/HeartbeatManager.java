@@ -36,7 +36,7 @@ public class HeartbeatManager {
 
         LOGGER.info("Starting heartbeat manager (interval: {}s)", HEARTBEAT_INTERVAL_SECONDS);
         scheduler = Executors.newSingleThreadScheduledExecutor(r -> {
-            Thread thread = new Thread(r, "CraftCorps-Heartbeat");
+            Thread thread = new Thread(r, "Nortix-Heartbeat");
             thread.setDaemon(true);
             return thread;
         });

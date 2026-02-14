@@ -104,7 +104,7 @@ public class ModAuthManager {
                                     LOGGER.error("[ModAuthManager] Failed to join Mojang session server");
                                     throw new RuntimeException("Failed to join Mojang session server");
                                 }
-                                LOGGER.info("[ModAuthManager] Step 3: Verifying join with CraftCorps backend...");
+                                LOGGER.info("[ModAuthManager] Step 3: Verifying join with Nortix backend...");
 
                                 // Step 3: Verify with our backend
                                 return authClient.verifyMojangAuth(finalUuid, finalUsername,
@@ -216,7 +216,7 @@ public class ModAuthManager {
 
         polling = true;
         pollScheduler = Executors.newSingleThreadScheduledExecutor(r -> {
-            Thread thread = new Thread(r, "CraftCorps-DeviceAuthPoll");
+            Thread thread = new Thread(r, "Nortix-DeviceAuthPoll");
             thread.setDaemon(true);
             return thread;
         });

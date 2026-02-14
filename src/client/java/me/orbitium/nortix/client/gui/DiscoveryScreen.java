@@ -9,7 +9,7 @@ public class DiscoveryScreen extends Screen {
     private final Screen parent;
 
     public DiscoveryScreen(Screen parent) {
-        super(Text.translatable("menu.craftcorps.discovery"));
+        super(Text.translatable("menu.nortix.discovery"));
         this.parent = parent;
     }
 

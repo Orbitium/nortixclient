@@ -20,9 +20,9 @@ import net.minecraft.util.Util;
  */
 public class SessionManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(SessionManager.class);
-    private static final String EXCHANGE_CODE_PROPERTY = "craftcorps.exchange_code";
-    private static final String DEVICE_ID_FILE = "craftcorps_device.dat";
-    private static final String REFRESH_TOKEN_FILE = "craftcorps_refresh.dat";
+    private static final String EXCHANGE_CODE_PROPERTY = "nortix.exchange_code";
+    private static final String DEVICE_ID_FILE = "nortix_device.dat";
+    private static final String REFRESH_TOKEN_FILE = "nortix_refresh.dat";
 
     private static SessionManager instance;
     private AuthApiClient authClient;
@@ -62,7 +62,7 @@ public class SessionManager {
         String exchangeCode = System.getProperty(EXCHANGE_CODE_PROPERTY);
         if (exchangeCode == null || exchangeCode.trim().isEmpty()) {
             // Check environment variable as fallback
-            exchangeCode = System.getenv("CRAFTCORPS_EXCHANGE_CODE");
+            exchangeCode = System.getenv("NORTIX_EXCHANGE_CODE");
         }
 
         if (exchangeCode != null && !exchangeCode.trim().isEmpty()) {
@@ -333,9 +333,9 @@ public class SessionManager {
      * Get the path to the device ID file
      */
     private Path getDeviceIdPath() {
-        // Store in .minecraft/craftcorps/
+        // Store in .minecraft/nortix/
         String minecraftDir = System.getProperty("user.dir");
-        return Paths.get(minecraftDir, "craftcorps", DEVICE_ID_FILE);
+        return Paths.get(minecraftDir, "nortix", DEVICE_ID_FILE);
     }
 
     /**
@@ -391,7 +391,7 @@ public class SessionManager {
      */
     private Path getRefreshTokenPath() {
         String minecraftDir = System.getProperty("user.dir");
-        return Paths.get(minecraftDir, "craftcorps", REFRESH_TOKEN_FILE);
+        return Paths.get(minecraftDir, "nortix", REFRESH_TOKEN_FILE);
     }
 
     AuthApiClient getAuthClient() {

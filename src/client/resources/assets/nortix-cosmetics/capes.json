@@ -4,7 +4,7 @@
         {
             "id": "default",
             "name": "Default Cape",
-            "description": "The classic CraftCorps cape",
+            "description": "The classic Nortix cape",
             "texture": "default.png",
             "rarity": "common"
         },
@@ -18,14 +18,14 @@
         {
             "id": "staff",
             "name": "Staff Cape",
-            "description": "CraftCorps staff member cape",
+            "description": "Nortix staff member cape",
             "texture": "staff.png",
             "rarity": "epic"
         },
         {
             "id": "developer",
             "name": "Developer Cape",
-            "description": "CraftCorps developer cape",
+            "description": "Nortix developer cape",
             "texture": "developer.png",
             "rarity": "legendary"
         }

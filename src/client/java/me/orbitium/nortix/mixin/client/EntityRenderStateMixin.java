@@ -8,15 +8,15 @@ import java.util.UUID;
 @Mixin(EntityRenderState.class)
 public class EntityRenderStateMixin implements IEntityRenderStateExtension {
     @Unique
-    private UUID craftcorps$uuid;
+    private UUID nortix$uuid;
 
     @Override
-    public void craftcorps$setUuid(UUID uuid) {
-        this.craftcorps$uuid = uuid;
+    public void nortix$setUuid(UUID uuid) {
+        this.nortix$uuid = uuid;
     }
 
     @Override
-    public UUID craftcorps$getUuid() {
-        return this.craftcorps$uuid;
+    public UUID nortix$getUuid() {
+        return this.nortix$uuid;
     }
 }

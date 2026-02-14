@@ -16,12 +16,12 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * Handles communication with the CraftCorps Auth Service
+ * Handles communication with the Nortix Labs Auth Service
  */
 public class AuthApiClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthApiClient.class);
-    private static final String AUTH_BASE_URL = "https://auth.craftcorps.net/auth";
-    private static final String API_BASE_URL = "https://api.craftcorps.net";
+    private static final String AUTH_BASE_URL = "https://auth.nortixlabs.com/auth";
+    private static final String API_BASE_URL = "https://api.nortixlabs.com";
     private static final Gson GSON = new Gson();
 
     private final HttpClient httpClient;

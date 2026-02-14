@@ -15,7 +15,7 @@ public class ConfigManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConfigManager.class);
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(),
-            "craftcorps-cosmetics.json");
+            "nortix-cosmetics.json");
 
     private static Config instance;
 

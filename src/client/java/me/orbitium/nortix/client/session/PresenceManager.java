@@ -145,9 +145,9 @@ public class PresenceManager {
 
         if (!isOnServer()) {
             // Main Menu
-            String stateKey = isCurrentlyIdle ? "rpc.craftcorps.state.idle" : "rpc.craftcorps.state.menu";
+            String stateKey = isCurrentlyIdle ? "rpc.nortix.state.idle" : "rpc.nortix.state.menu";
             me.orbitium.nortix.client.util.DiscordRPCManager.setActivity(
-                    net.minecraft.client.resource.language.I18n.translate("rpc.craftcorps.main_menu"),
+                    net.minecraft.client.resource.language.I18n.translate("rpc.nortix.main_menu"),
                     "idle",
                     net.minecraft.client.resource.language.I18n.translate(stateKey),
                     version,
@@ -164,9 +164,9 @@ public class PresenceManager {
         }
 
         if (shouldShow) {
-            String name = net.minecraft.client.resource.language.I18n.translate("rpc.craftcorps.exploring");
+            String name = net.minecraft.client.resource.language.I18n.translate("rpc.nortix.exploring");
             String address = "local";
-            String stateKey = isCurrentlyIdle ? "rpc.craftcorps.state.idle" : "rpc.craftcorps.state.playing";
+            String stateKey = isCurrentlyIdle ? "rpc.nortix.state.idle" : "rpc.nortix.state.playing";
 
             if ("MULTIPLAYER".equals(sessionType)) {
                 name = (currentServerName != null && !currentServerName.isEmpty()) ? currentServerName
@@ -174,11 +174,11 @@ public class PresenceManager {
                 address = currentServerIp + (currentServerPort != 25565 ? ":" + currentServerPort : "");
             } else if ("REALMS".equals(sessionType)) {
                 name = currentRealmName != null ? currentRealmName
-                        : net.minecraft.client.resource.language.I18n.translate("rpc.craftcorps.realms");
+                        : net.minecraft.client.resource.language.I18n.translate("rpc.nortix.realms");
                 address = "realms";
             } else if ("SINGLEPLAYER".equals(sessionType)) {
                 name = currentWorldName != null ? currentWorldName
-                        : net.minecraft.client.resource.language.I18n.translate("rpc.craftcorps.singleplayer");
+                        : net.minecraft.client.resource.language.I18n.translate("rpc.nortix.singleplayer");
                 address = "singleplayer";
             }
 

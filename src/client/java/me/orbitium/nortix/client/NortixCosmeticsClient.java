@@ -8,12 +8,12 @@ import net.minecraft.client.network.AbstractClientPlayerEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CraftcorpsCosmeticsClient implements ClientModInitializer {
-    private static final Logger LOGGER = LoggerFactory.getLogger(CraftcorpsCosmeticsClient.class);
+public class NortixCosmeticsClient implements ClientModInitializer {
+    private static final Logger LOGGER = LoggerFactory.getLogger(NortixCosmeticsClient.class);
 
     @Override
     public void onInitializeClient() {
-        LOGGER.info("Initializing CraftCorps Cosmetics Mod");
+        LOGGER.info("Initializing Nortix Client");
 
         // Initialize session management first
         SessionManager.getInstance().initialize().thenAccept(success -> {
@@ -95,7 +95,7 @@ public class CraftcorpsCosmeticsClient implements ClientModInitializer {
         // This handles cases where players stay in view longer than the cache TTL
         net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (client.world != null && client.world.getTime() % (20 * 60 * 5) == 0) {
-                LOGGER.debug("[CraftcorpsCosmeticsClient] Periodic cosmetics check for nearby players...");
+                LOGGER.debug("[NortixCosmeticsClient] Periodic cosmetics check for nearby players...");
                 for (AbstractClientPlayerEntity player : client.world.getPlayers()) {
                     CapeManager.ensureCape(player.getUuid());
                     NametagManager.ensureNametag(player.getUuid());
