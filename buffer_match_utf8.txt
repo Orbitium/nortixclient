@@ -1,0 +1,10 @@
+﻿	m	(Ljavax/sound/sampled/AudioFormat;I)I	getBufferSize	a	method_19644
+	m	()Lnet/minecraft/client/gl/BufferManager;	getBufferManager	b	method_68401
+	m	()Ljava/nio/ByteBuffer;	getBuffer	a	method_60817
+	m	()Ljava/nio/ByteBuffer;	getBuffer	a	method_60818
+	m	()Lnet/minecraft/client/render/BufferBuilderStorage;	getBufferBuilders	aU	method_22940
+	m	(Lnet/minecraft/client/render/RenderLayer;)Lnet/minecraft/client/render/VertexConsumer;	getBuffer	a	method_73477
+	m	()I	getBufferSize	b	method_72021
+	m	(Lnet/minecraft/client/render/BlockRenderLayer;)Lnet/minecraft/client/render/chunk/Buffers;	getBuffersForLayer	b	method_72034
+	m	(I)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;	getBufferSlice	a	method_76308
+	m	()Ljava/nio/ByteBuffer;	getBuffer	a	method_19679

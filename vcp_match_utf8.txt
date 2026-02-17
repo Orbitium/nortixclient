@@ -1,0 +1,67 @@
+﻿	m	(Lnet/minecraft/text/OrderedText;FFIILorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;I)V	drawWithOutline	a	method_37296
+	m	(Lnet/minecraft/text/OrderedText;FFIZLorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/font/TextRenderer$TextLayerType;II)V	draw	a	method_22942
+	m	(Ljava/lang/String;FFIZLorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/font/TextRenderer$TextLayerType;II)V	draw	a	method_27521
+	m	(Lnet/minecraft/text/Text;FFIZLorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/font/TextRenderer$TextLayerType;II)V	draw	a	method_27522
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider;Lorg/joml/Matrix4f;Lnet/minecraft/client/font/TextRenderer$TextLayerType;I)Lnet/minecraft/client/font/TextRenderer$GlyphDrawer;	drawing	a	method_71799
+	f	Lnet/minecraft/client/render/VertexConsumerProvider;	field_60695	a	field_60695
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	vertexConsumers	x	field_59917
+	m	(Lnet/minecraft/client/gui/render/state/GuiRenderState;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/render/command/RenderDispatcher;Ljava/util/List;)V	<init>	<init>	<init>
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/texture/SpriteHolder;)V	<init>	<init>	<init>
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/entity/EntityRenderManager;)V	<init>	<init>	<init>
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/texture/SpriteHolder;)V	<init>	<init>	<init>
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	vertexConsumers	a	field_59933
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	<init>	<init>	<init>
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/state/WorldRenderState;)V	renderBlockDamage	a	method_62206
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/util/math/MatrixStack;ZLnet/minecraft/client/render/state/WorldRenderState;)V	renderTargetBlockOutline	a	method_62210
+c	net/minecraft/client/render/VertexConsumerProvider	hon	net/minecraft/class_4597
+	m	(Lnet/minecraft/client/util/BufferAllocator;)Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	immediate	a	method_22991
+	m	(Ljava/util/SequencedMap;Lnet/minecraft/client/util/BufferAllocator;)Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	immediate	a	method_22992
+c	net/minecraft/client/render/VertexConsumerProvider$Immediate	hon$a	net/minecraft/class_4597$class_4598
+	c	A vertex consumer provider that immediately draws the current buffer\nbuilder when a different render layer is requested except for render\nlayers specified in the constructor.\n\n@see VertexConsumerProvider#immediate(BufferAllocator)\n@see VertexConsumerProvider#immediate(SequencedMap, BufferAllocator)
+c	net/minecraft/client/render/OutlineVertexConsumerProvider	hoq	net/minecraft/class_4618
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	plainDrawer	a	field_21059
+c	net/minecraft/client/render/OutlineVertexConsumerProvider$OutlineVertexConsumer	hoq$a	net/minecraft/class_4618$class_4586
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	entityVertexConsumers	c	field_46901
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	effectVertexConsumers	d	field_20959
+	f	Lnet/minecraft/client/render/OutlineVertexConsumerProvider;	outlineVertexConsumers	e	field_20961
+	m	()Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	getEntityVertexConsumers	c	method_23000
+	m	()Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	getEffectVertexConsumers	d	method_23001
+	m	()Lnet/minecraft/client/render/OutlineVertexConsumerProvider;	getOutlineVertexConsumers	e	method_23003
+	f	Lnet/minecraft/client/render/VertexConsumerProvider;	vertexConsumers	e	field_59971
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/texture/Sprite;)V	renderFireOverlay	a	method_23070
+	m	(Lnet/minecraft/client/MinecraftClient;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;)V	renderUnderwaterOverlay	a	method_23069
+	m	(Lnet/minecraft/client/texture/Sprite;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;)V	renderInWallOverlay	a	method_23068
+	m	(Lnet/minecraft/client/MinecraftClient;Lnet/minecraft/client/texture/SpriteHolder;Lnet/minecraft/client/render/VertexConsumerProvider;)V	<init>	<init>	<init>
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/client/render/state/WeatherRenderState;)V	renderPrecipitation	a	method_62320
+	m	(Lnet/minecraft/block/BlockState;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;II)V	renderBlockAsEntity	a	method_3353
+	m	(Lnet/minecraft/item/ItemDisplayContext;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;II[ILjava/util/List;Lnet/minecraft/client/render/RenderLayer;Lnet/minecraft/client/render/item/ItemRenderState$Glint;)V	renderItem	a	method_62476
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/RenderLayer;Lnet/minecraft/client/util/math/MatrixStack$Entry;)Lnet/minecraft/client/render/VertexConsumer;	getSpecialItemGlintConsumer	a	method_71138
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/RenderLayer;ZZ)Lnet/minecraft/client/render/VertexConsumer;	getItemGlintConsumer	a	method_23181
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/block/BlockRenderManager;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;)V	render	a	method_72998
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_72999
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	vertexConsumers	c	field_61830
+	f	Lnet/minecraft/client/render/OutlineVertexConsumerProvider;	outlineVertexConsumers	e	field_61832
+	f	Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;	crumblingOverlayVertexConsumers	f	field_62258
+	m	(Lnet/minecraft/client/render/command/OrderedRenderCommandQueueImpl;Lnet/minecraft/client/render/block/BlockRenderManager;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/texture/AtlasManager;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/font/TextRenderer;)V	<init>	<init>	<init>
+	m	(Lnet/minecraft/client/util/math/MatrixStack$Entry;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/entity/state/EntityRenderState;Lorg/joml/Quaternionf;Lnet/minecraft/client/texture/AtlasManager;)V	render	a	method_73005
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/texture/AtlasManager;)V	render	a	method_73006
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;)V	render	a	method_73010
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_73012
+	m	(Lorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/entity/state/EntityRenderState$LeashData;)V	render	a	method_73013
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;Ljava/util/List;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	renderAllBlended	a	method_73250
+	m	(Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;Ljava/util/Map;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	renderAll	a	method_73249
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_73001
+	m	(Lnet/minecraft/client/render/command/OrderedRenderCommandQueueImpl$ModelCommand;Lnet/minecraft/client/render/RenderLayer;Lnet/minecraft/client/render/VertexConsumer;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_73000
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/render/OutlineVertexConsumerProvider;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_73543
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/font/TextRenderer;)V	render	a	method_73014
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_73015
+	m	(Lnet/minecraft/client/render/command/BatchingRenderCommandQueue;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;)V	render	a	method_73017
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;Lorg/joml/Matrix4f;)V	draw	a	method_75477
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;)V	drawText	a	method_76661
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;Lorg/joml/Matrix4f;)V	draw	a	method_76662
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;)V	drawTriangleFans	b	method_76663
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;Lorg/joml/Matrix4f;)V	drawLines	b	method_76664
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;)V	drawQuads	c	method_76665
+	m	(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;Lnet/minecraft/client/render/state/CameraRenderState;)V	drawPoints	d	method_76666
+	m	(Lnet/minecraft/client/texture/SpriteHolder;Lnet/minecraft/client/render/VertexConsumerProvider;Ljava/util/function/Function;)Lnet/minecraft/client/render/VertexConsumer;	getVertexConsumer	a	method_24145
+	m	(Lnet/minecraft/client/texture/SpriteHolder;Lnet/minecraft/client/render/VertexConsumerProvider;Ljava/util/function/Function;ZZ)Lnet/minecraft/client/render/VertexConsumer;	getVertexConsumer	a	method_30001

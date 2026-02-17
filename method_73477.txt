@@ -1,0 +1,1 @@
+﻿	m	(Lnet/minecraft/client/render/RenderLayer;)Lnet/minecraft/client/render/VertexConsumer;	getBuffer	a	method_73477

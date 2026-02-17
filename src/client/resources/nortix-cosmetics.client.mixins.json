@@ -6,7 +6,8 @@
   "client": [
     "MixinAbstractClientPlayerEntity",
     "MixinTitleScreen",
-    "EntityRendererMixin"
+    "EntityRendererMixin",
+    "PlayerEntityRendererMixin"
   ],
   "refmap": "nortix-cosmetics.refmap.json",
   "injectors": {
